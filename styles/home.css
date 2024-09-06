@@ -1,0 +1,52 @@
+.welcome-banner {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.company-title {
+  position: absolute;
+  top: 35px;
+
+
+  font-family: "libre baskerville", serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: white;
+  background-color: rgb(58, 51, 34);
+
+  padding: 10px 16px;
+  border: 2px solid white;
+}
+
+.weekly-ad-link {
+  position: absolute;
+  bottom: -15px;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  color: white;
+  background-color: rgb(174, 154, 101);
+  border: none;
+  border-radius: 25px;
+
+  padding: 14px 50px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.weekly-ad-link:hover {
+  color: rgb(174, 154, 101);
+  background-color: white;
+  border: 1px solid rgb(174, 154, 101);
+}
