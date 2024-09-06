@@ -35,3 +35,14 @@
   color: white;
   background-color: rgb(174, 154, 101);
 }
+
+.site-header .current-page {
+  color: white;
+  background-color: rgb(174, 154, 101);
+  margin: 0 5px;
+}
+
+.site-header .current-page:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
