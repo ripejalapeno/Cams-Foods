@@ -102,35 +102,72 @@
 .store-info {
   width: 100%;
   padding: 50px 0;
+  padding-bottom: 90px;
 
   text-align: center;
 
   color: rgb(189, 173, 125);
   background-color: rgb(58, 51, 34);
+  margin-bottom: 10px;
 }
 
-.info-header {
+.store-info div {
+  margin-bottom: 6px;
+}
+
+.store-info .info-header {
   font-family: "playfair display";
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.store-location,
-.contact-info {
+.store-info .store-location,
+.store-info .contact-info {
   margin-bottom: 18px;
 }
 
-.store-hours {
+.store-info .store-hours {
   margin-bottom: 10px;
 }
 
-.hours-header {
-  margin-top: 10px;
-  margin-bottom: 6px;
+.store-info .hours-header {
+  margin-top: 12px;
+  margin-bottom: 10px;
   text-decoration: underline;
 }
 
 .google-map {
   margin-top: 40px;
+}
+
+.legal-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 10px;
+  bottom: 15px;
+
+  font-size: 15px;
+
+  color: rgb(189, 173, 125);
+}
+
+.legal-info div {
+  margin-bottom: 6px;
+}
+
+.privacy-policy-link {
+  font-size: 13px;
+  color: white;
+  background-color: black;
+
+  padding: 8px 14px;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.privacy-policy-link:hover {
+  background-color: rgb(116, 103, 67);
 }

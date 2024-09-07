@@ -27,3 +27,9 @@ const partyPlanningLink = document.querySelector('.js-party-planning-link');
 partyPlanningLink.addEventListener('click', () => {
   window.open('https://www.chrisfoodcenter.com/_files/ugd/a8f83f_8fb4bc5e9da748c39fde3bc0180b0bcb.pdf', '_blank');
 })
+
+const privacyPolicyLink = document.querySelector('.js-privacy-policy-link');
+
+privacyPolicyLink.addEventListener('click', () => {
+  window.open('https://www.termsfeed.com/privacy-policy/38e911da9c8703282c79049e44f737f6', '_blank');
+})
