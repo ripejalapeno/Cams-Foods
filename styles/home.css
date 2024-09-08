@@ -54,9 +54,11 @@
 }
 
 .weekly-ad-link:hover {
-  color: rgb(174, 154, 101);
-  background-color: white;
-  border: 1px solid rgb(174, 154, 101);
+  background-color: rgb(236, 174, 38);
+
+  border-radius: 30px;
+
+  padding: 18px 90px;
 }
 
 .navigation-section {
@@ -67,7 +69,7 @@
 
 .navigation-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   row-gap: 15px;
   column-gap: 15px;
 
@@ -76,12 +78,12 @@
   padding: 40px 30px;
 }
 
-.navigation-grid div {
+.nav-link {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   align-items: center;
-  height: 100px;
+  height: 160px;
 
   font-size: 18px;
   letter-spacing: 1px;
@@ -92,12 +94,38 @@
   border-radius: 5px;
 
   cursor: pointer;
-  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
 
-.navigation-grid div:hover {
-  background-color: rgb(189, 173, 125);
+.nav-link:hover {
+  background-color: rgb(236, 174, 38);
+  border-radius: 20px;
+
+  .nav-img-box img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
+
+.nav-img-box {
+  height: 100%;
+  width: 40%;
+}
+
+.nav-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition-duration: 200ms;
+}
+
+.nav-link-title {
+  width: 50%;
+  text-align: center;
+  margin-left: 5%;
+}
+
 
 .store-info {
   width: 100%;

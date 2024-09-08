@@ -33,3 +33,15 @@ const privacyPolicyLink = document.querySelector('.js-privacy-policy-link');
 privacyPolicyLink.addEventListener('click', () => {
   window.open('https://www.termsfeed.com/privacy-policy/38e911da9c8703282c79049e44f737f6', '_blank');
 })
+
+const subwayLink = document.querySelector('.js-subway-link');
+
+subwayLink.addEventListener('click', () => {
+  window.open('https://restaurants.subway.com/united-states/mn/sandstone/320-state-highway-123', '_blank');
+})
+
+const floralLink = document.querySelector('.js-floral-link');
+
+floralLink.addEventListener('click', () => {
+  window.open('https://www.cherisflowerbasket.com/#', '_blank');
+})
