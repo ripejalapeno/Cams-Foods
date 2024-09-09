@@ -5,6 +5,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: ease 750ms;
+}
+
+.ad-img-box {
+  position: absolute;
+  left: 0;
+  max-width: 50%;
+  transition: ease 750ms;
+}
+
+.ad-img {
+  width: 80%;
+  opacity: 0;
+  transition: ease 750ms;
 }
 
 .tagline {
@@ -27,13 +49,6 @@
 
   padding: 10px 16px;
   border: 2px solid white;
-}
-
-.banner-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center;
 }
 
 .weekly-ad-link {
@@ -90,7 +105,7 @@
 
   color: white;
   background-color: rgb(174, 154, 101);
-  box-shadow: 2px 2px 10px rgba(66, 59, 38, 0.9);
+  box-shadow: 2px 2px 8px rgba(66, 59, 38, 0.9);
   border-radius: 5px;
 
   cursor: pointer;
@@ -99,7 +114,12 @@
 
 .nav-link:hover {
   background-color: rgb(236, 174, 38);
+  box-shadow: 6px 4px 8px rgba(66, 59, 38, 0.95);
   border-radius: 20px;
+
+  .nav-img-box {
+    width: 45%;
+  }
 
   .nav-img-box img {
     border-top-left-radius: 20px;
@@ -110,11 +130,15 @@
 .nav-img-box {
   height: 100%;
   width: 40%;
+  transition-duration: 200ms;
 }
 
 .nav-img-box img {
   height: 100%;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
   object-fit: cover;
   object-position: center;
   transition-duration: 200ms;
