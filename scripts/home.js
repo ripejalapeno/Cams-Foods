@@ -54,11 +54,13 @@ let adImageIndex = 0;
 const adImages = [
   'ad-0.webp',
   'ad-1.webp',
-  'ad-2.webp'
+  'ad-2.webp',
+  'ad-3.webp'
 ]
 
 setInterval(() => {
-  adImgBox.style.transform = 'translateX(50%)';
+  adImgBox.style.transform = 'translateX(-50%)';
+  adImgBox.style.left = '50%';
   adImageIndex++;
   adImg.src = `images/${adImages[adImageIndex % adImages.length]}`;
   adImg.style.opacity = '1';
