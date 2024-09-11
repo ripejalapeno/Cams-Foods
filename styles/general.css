@@ -4,4 +4,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
   padding-top: 60px;
+
+  --main-bg-color: rgb(199, 153, 28);
+  --main-accent-color: rgb(58, 51, 34);
+  --second-accent-color: rgb(116, 103, 67);
+  --third-accent-color: rgb(174, 154, 101);
+  --main-shadow: 2px 2px 8px rgba(66, 59, 38, 0.9);
 }
