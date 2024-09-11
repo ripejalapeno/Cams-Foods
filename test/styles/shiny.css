@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(7, 6, 12);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(13, 17, 20);
+  z-index: 1;
+}
+
+.card-grid {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  column-gap: 1em;
+  padding: 1em;
+  background-color: black;
+  z-index: 1;
+  transform: translate(50%, 50%);
+}
+
+.card {
+  align-self: center;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgb(43, 83, 81);
+  padding: 1em;
+  text-align: center;
+  border-radius: 2em;
+  user-select: none;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after,
+.card::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent, lightblue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: inherit;
+  animation: 3s spin linear infinite;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.card::before {
+  filter: blur(2rem);
+}
+
+.card:hover::before,
+.card:hover::after {
+  opacity: .75;
+}
+
+.card:active:before,
+.card:active::after {
+  padding: 5px;
+  opacity: .95;
+  transition: 125ms;
+}
+
+.card:active::before {
+  filter: blur(3rem);
+}
+
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}

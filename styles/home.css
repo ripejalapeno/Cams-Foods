@@ -6,20 +6,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  height: 600px;
 }
 
 .banner-img {
+  height: 200%;
   width: 100%;
-  height: 400px;
   object-fit: cover;
   object-position: center;
   transition: ease 750ms;
+  z-index: -1;
 }
 
 .ad-img-box {
   position: absolute;
   left: 0;
-  height: 80%;
+  height: 70%;
   transition: ease 750ms;
 }
 
@@ -35,62 +38,110 @@
   margin-bottom: 5px;
 }
 
-.company-title {
-  position: absolute;
-  top: 35px;
+.navigation-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 103, 67);
 
+  z-index: 1;
+}
 
-  font-family: "libre baskerville", serif;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: white;
-  background-color: rgb(58, 51, 34);
+@property --angle1{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
-  padding: 10px 16px;
-  border: 2px solid white;
+@property --angle2{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .weekly-ad-link {
   position: absolute;
-  bottom: -15px;
-
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
   font-size: 17px;
   font-weight: 600;
 
   color: white;
-  background-color: rgb(174, 154, 101);
+  
   border: none;
   border-radius: 25px;
 
-  padding: 14px 50px;
+  padding: 18px 50px;
   cursor: pointer;
   transition-duration: 200ms;
+  z-index: 10;
 }
 
 .weekly-ad-link:hover {
-  background-color: rgb(236, 174, 38);
-
   border-radius: 30px;
-
-  padding: 18px 90px;
+  padding: 22px 90px;
+  background-image: conic-gradient(from var(--angle1), transparent, rgb(247, 193, 76));
+  animation: 2s spin1 linear infinite;
 }
 
-.navigation-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.weekly-ad-link::after,
+.weekly-ad-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 95%;
+  height: 90%;
+  border-radius: inherit;
+}
+
+.weekly-ad-link::after {
+  background-color: rgb(199, 153, 28);
+}
+
+.weekly-ad-link:hover::before {
+  z-index: -2;
+  width: 99%;
+  height: 99%;
+  opacity: .95;
+  background-image: conic-gradient(from var(--angle2), transparent, rgb(247, 193, 76));;
+  animation: 2s spin2 linear infinite;
+  filter: blur(0.5rem);
+}
+
+@keyframes spin1 {
+  from {
+    --angle1: 0deg;
+  }
+  to {
+    --angle1: 360deg;
+  }
+}
+
+@keyframes spin2 {
+  from {
+    --angle2: 180deg;
+  }
+  to {
+    --angle2: 540deg;
+  }
 }
 
 .navigation-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 15px;
-  column-gap: 15px;
+  row-gap: 25px;
+  column-gap: 25px;
 
-  width: 100%;
-  background-color: rgb(116, 103, 67);
-  padding: 40px 30px;
+  width: 90%;
+  
+  padding: 75px 20px;
+
 }
 
 .nav-link {
