@@ -16,11 +16,15 @@ applicationLink.addEventListener('click', () => {
   window.open('https://www.chrisfoodcenter.com/_files/ugd/a8f83f_df944cbf21c44cf699cc73293c81a9db.pdf', '_blank');
 })
 
-const deliLink = document.querySelector('.js-deli-link');
+const deliLinks = document.querySelectorAll('.js-deli-link');
 
-deliLink.addEventListener('click', () => {
-  window.open('https://www.chrisfoodcenter.com/menu', '_blank');
+deliLinks.forEach((deliLink) => {
+  deliLink.addEventListener('click', () => {
+    window.location.href = 'deli.html'
+  })
 })
+
+
 
 const partyPlanningLink = document.querySelector('.js-party-planning-link');
 
@@ -34,11 +38,14 @@ privacyPolicyLink.addEventListener('click', () => {
   window.open('https://www.termsfeed.com/privacy-policy/38e911da9c8703282c79049e44f737f6', '_blank');
 })
 
-const subwayLink = document.querySelector('.js-subway-link');
+const subwayLinks = document.querySelectorAll('.js-subway-link');
 
-subwayLink.addEventListener('click', () => {
-  window.open('https://restaurants.subway.com/united-states/mn/sandstone/320-state-highway-123', '_blank');
+subwayLinks.forEach((subwayLink) => {
+  subwayLink.addEventListener('click', () => {
+    window.open('https://restaurants.subway.com/united-states/mn/sandstone/320-state-highway-123', '_blank');
+  })
 })
+
 
 const floralLink = document.querySelector('.js-floral-link');
 

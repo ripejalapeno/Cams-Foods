@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Scroll Practice</title>
+</head>
+<body>
+  <style>
+    .parallax-element {
+      position: relative;
+      height: 300px;
+    }
+  
+    #element1 {
+      background-color: lightblue;
+    }
+  
+    #element2 {
+      background-color: lightgreen;
+    }
+  
+    #element3 {
+      background-color: lightcoral;
+    }
+  </style>
+  
+  <div id="element1" class="parallax-element">Element 1</div>
+  <div id="element2" class="parallax-element">Element 2</div>
+  <div id="element3" class="parallax-element">Element 3</div>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.pageYOffset;
+  
+      // Adjust each element at different speeds
+      document.getElementById('element1').style.transform = `translateY(${scrollPosition * 5}px)`;  // Slower
+      document.getElementById('element2').style.transform = `translateY(${scrollPosition * 1}px)`;    // Normal speed
+      document.getElementById('element3').style.transform = `translateY(${scrollPosition * 1.5}px)`;  // Faster
+    });
+  </script>
+  
+</body>
+</html>
