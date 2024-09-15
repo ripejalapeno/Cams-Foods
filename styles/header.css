@@ -13,6 +13,7 @@
 
   background-color: white;
   border-bottom: 1px solid rgb(174, 154, 101);
+  user-select: none;
 }
 
 .site-header div {

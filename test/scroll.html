@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <title>Scroll Practice</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intersection Observer Example</title>
   <style>
-    .parallax-element {
-      position: relative;
-      height: 300px;
+    .content {
+      height: 200vh; /* Make the page scrollable */
     }
-  
-    #element1 {
+    .box {
+      height: 300px;
+      margin: 50px auto;
       background-color: lightblue;
     }
-  
-    #element2 {
+    .in-view {
       background-color: lightgreen;
     }
-  
-    #element3 {
-      background-color: lightcoral;
-    }
   </style>
-  
-  <div id="element1" class="parallax-element">Element 1</div>
-  <div id="element2" class="parallax-element">Element 2</div>
-  <div id="element3" class="parallax-element">Element 3</div>
-  
+</head>
+<body>
+  <div class="content">Scroll down</div>
+  <div class="box">Watch me change color!</div>
+  <div class="content"></div>
+
   <script>
-    window.addEventListener('scroll', function() {
-      const scrollPosition = window.pageYOffset;
-  
-      // Adjust each element at different speeds
-      document.getElementById('element1').style.transform = `translateY(${scrollPosition * 5}px)`;  // Slower
-      document.getElementById('element2').style.transform = `translateY(${scrollPosition * 1}px)`;    // Normal speed
-      document.getElementById('element3').style.transform = `translateY(${scrollPosition * 1.5}px)`;  // Faster
+    // Select the element you want to observe
+    const target = document.querySelector('.box');
+
+    // Create the IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // If the element is in view, change its background color
+          entry.target.classList.add('in-view');
+        } else {
+          // Remove the class if the element goes out of view
+          entry.target.classList.remove('in-view');
+        }
+      });
+    }, {
+      threshold: 0.5 // Trigger when 50% of the element is visible
     });
+
+    // Start observing the target element
+    observer.observe(target);
   </script>
-  
 </body>
 </html>
