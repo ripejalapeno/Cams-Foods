@@ -5,6 +5,15 @@ body {
 
   padding-top: 60px;
 
+  --light-color-1: #c7991c;
+  --light-color-2: #d2bd1d;
+  --light-color-3: #fcf26d;
+
+  --dark-color-1: #3e2b0c;
+  --dark-color-2: #806723;
+  --dark-color-3: #ae9a65;
+
+
   --main-bg-color: rgb(199, 153, 28);
   --main-accent-color: rgb(58, 51, 34);
   --second-accent-color: rgb(116, 103, 67);

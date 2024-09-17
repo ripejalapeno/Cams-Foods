@@ -18,4 +18,4 @@ subwayLinks.forEach((subwayLink) => {
   subwayLink.addEventListener('click', () => {
     window.open('https://restaurants.subway.com/united-states/mn/sandstone/320-state-highway-123', '_blank');
   })
-})
+});
