@@ -1,3 +1,5 @@
+import resizeMap from "./general.js";
+
 const specialsBox = document.querySelector('.js-deli-specials-box');
 
 window.addEventListener('scroll', () => {
@@ -37,4 +39,10 @@ function updateDebug() {
   debug.innerText = debugMessage;
 }
 
+const googleMap = document.getElementById('googleMap');
 
+window.addEventListener('resize', () => {
+  resizeMap();
+})
+
+resizeMap();
