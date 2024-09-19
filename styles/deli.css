@@ -38,6 +38,14 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .deli-specials-box {
+    width: 80%;
+  }
+}
+
+
+
 .deli-specials-img {
   width: 100%;
   border-radius: 15px;
