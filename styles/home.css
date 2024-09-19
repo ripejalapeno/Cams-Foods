@@ -166,9 +166,6 @@
   justify-content: flex-start;
 }
 
-.nav-link.right {
-  justify-content: flex-end;
-}
 
 .nav-link:hover {
   background-color: rgb(236, 174, 38);
@@ -204,6 +201,10 @@
   transition-duration: 200ms;
 }
 
+.right .nav-img-box {
+  align-self: flex-end;
+}
+
 .nav-img-box img {
   height: 100%;
   width: 100%;
@@ -223,8 +224,14 @@
   border-bottom-right-radius: 5px;
 }
 
-.nav-link-title {
+.left .nav-link-title {
   width: 50%;
   text-align: center;
   margin-left: 5%;
+}
+
+.right .nav-link-title {
+  width: 50%;
+  text-align: center;
+  margin-right: 5%;
 }
