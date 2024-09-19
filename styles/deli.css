@@ -58,6 +58,10 @@ body {
   align-items: center;
 }
 
+.menu-section-description {
+  font-size: 1.25rem;
+}
+
 h1 {
   font-size: 3.5rem;
   margin: 1rem;
@@ -124,7 +128,7 @@ h1::after {
   padding: 10px;
   border-bottom: 1px dotted white;
 
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 .menu-item-description {
