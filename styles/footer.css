@@ -16,28 +16,28 @@
 
 .store-info .info-header {
   font-family: "playfair display";
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .store-info .store-location,
 .store-info .contact-info {
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .store-info .store-hours {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 .store-info .hours-header {
-  margin-top: 12px;
-  margin-bottom: 10px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.8rem;
   text-decoration: underline;
 }
 
 .google-map {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .legal-info {
@@ -45,10 +45,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  left: 10px;
-  bottom: 15px;
+  left: 0.75rem;
+  bottom: 0.75rem;
 
-  font-size: 15px;
+  font-size: 0.75rem;
 
   color: rgb(189, 173, 125);
 }
@@ -58,7 +58,7 @@
 }
 
 .privacy-policy-link {
-  font-size: 13px;
+  font-size: .75rem;
   color: white;
   background-color: black;
 
