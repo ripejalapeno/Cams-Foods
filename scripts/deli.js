@@ -24,12 +24,6 @@ subwayLinks.forEach((subwayLink) => {
 
 const debug = document.getElementById('debug');
 
-updateDebug();
-
-window.addEventListener('resize', () => {
-  updateDebug();
-})
-
 function updateDebug() {
   let viewportHeight = window.innerHeight;
   let viewportWidth = window.innerWidth;

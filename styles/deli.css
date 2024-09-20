@@ -85,7 +85,7 @@ h1::after {
   height: 6px;
   width: 80%;
 
-  border-radius: 3px;
+  border-radius: 30px;
   background: linear-gradient(to right, white, var(--light-color-2), transparent);
 }
 
@@ -94,6 +94,8 @@ h1::after {
   color: white;
   width: 100%;
   padding: 75px 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
   text-align: center;
   z-index: 2;

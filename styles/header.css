@@ -12,7 +12,7 @@
   z-index: 100;
 
   background-color: white;
-  border-bottom: 1px solid rgb(174, 154, 101);
+  border-bottom: 1px solid var(--third-accent-color);
   user-select: none;
 }
 
@@ -24,7 +24,7 @@
 
   height: 100%;
 
-  color: rgb(174, 154, 101);
+  color: var(--third-accent-color);
   font-weight: 550;
   font-size: 1rem;
 
@@ -34,13 +34,12 @@
 
 .site-header div:hover {
   color: white;
-  background-color: rgb(174, 154, 101);
+  background-color: var(--light-color-4);
 }
 
 .site-header .current-page {
   color: white;
-  background-color: rgb(174, 154, 101);
-  margin: 0 5px;
+  background-color: var(--light-color-4);
 }
 
 .site-header .current-page:hover {
