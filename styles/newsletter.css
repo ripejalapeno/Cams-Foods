@@ -21,9 +21,16 @@
   margin-top: 2rem;
   border-radius: 15px;
 
-  width: 50%;
+  width: 65vw;
   background-color: var(--second-accent-color);
   box-shadow: var(--main-shadow);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .email-input-card {
+    width: 75vw;
+  }
 }
 
 .email-input,
