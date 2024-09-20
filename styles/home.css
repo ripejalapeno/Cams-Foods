@@ -226,14 +226,18 @@
   border-bottom-right-radius: 5px;
 }
 
-.left .nav-link-title {
+.nav-link-title {
   width: 50%;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.left .nav-link-title {
   text-align: center;
   margin-left: 5%;
 }
 
 .right .nav-link-title {
-  width: 50%;
   text-align: center;
   margin-right: 5%;
 }
