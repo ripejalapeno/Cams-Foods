@@ -18,6 +18,12 @@ applicationLink.addEventListener('click', () => {
   window.open('https://www.chrisfoodcenter.com/_files/ugd/a8f83f_df944cbf21c44cf699cc73293c81a9db.pdf', '_blank');
 })
 
+const aboutLink = document.querySelector('.js-about-link');
+
+aboutLink.addEventListener('click', () => {
+  window.location.href = 'about.html';
+})
+
 const deliLinks = document.querySelectorAll('.js-deli-link');
 
 deliLinks.forEach((deliLink) => {
