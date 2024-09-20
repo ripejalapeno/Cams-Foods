@@ -138,6 +138,10 @@ h1::after {
   font-size: 1.10rem;
 }
 
+.menu-item-title {
+  margin-right: 1rem;
+}
+
 .menu-item-description {
   align-self: center;
   width: 85%;
