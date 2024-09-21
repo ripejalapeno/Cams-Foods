@@ -1,4 +1,5 @@
 import resizeMap from "./general.js";
+import activateButton from "./header.js";
 
 const weeklyAdLink = document.querySelector('.js-weekly-ad-link');
 
@@ -95,6 +96,7 @@ window.addEventListener('resize', () => {
 
 resizeMap();
 
+activateButton();
 
 
 
