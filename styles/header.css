@@ -3,16 +3,43 @@
   align-items: center;
 
   position: fixed;
-  z-index: 100;
+  z-index: 20;
 
   user-select: none;
 }
 
 .toggle-menu-button {
-  position: absolute;
-  top: 1vh;
+  position: fixed;
+  top: 3vh;
+  right: 3vh;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(173, 173, 173);
+
   transition: ease 200ms;
 }
+
+.toggle-menu-button:hover {
+  background-color: rgb(204, 203, 203);
+}
+
+.toggle-menu-button:active {
+  background-color: rgb(241, 241, 241);
+}
+
+.menu-icon {
+  font-size: 2rem;
+  padding: 0.25rem;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .site-header {
@@ -29,21 +56,11 @@
   }
 
   .site-header.header-open {
-    visibility: visible;
-    right: 0;
-    
-    .toggle-menu-button {
-      right: 2vw;
-    }
-    
+    right: 0; 
   }
 
   .site-header.header-closed {
     right: -60vw;
-
-    .toggle-menu-button {
-      left: -5vw;
-    }
   }
 
   
