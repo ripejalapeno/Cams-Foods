@@ -3,7 +3,7 @@ body {
   width: 100%;
   box-sizing: border-box;
 
-  font-family: "Merriweather", serif;
+  font-family: "Lato", serif;
 
   padding-top: 60px;
   width: auto;
@@ -33,6 +33,10 @@ body {
 @media screen and (max-width: 768px) {
   :root {
     font-size: 15px;
+  }
+
+  body {
+    padding-top: 0;
   }
 }
 
