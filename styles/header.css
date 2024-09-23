@@ -1,6 +1,5 @@
 .site-header {
   display: flex;
-  align-items: center;
 
   position: fixed;
   z-index: 20;
@@ -40,27 +39,33 @@
 
 
 
-
+/* Sidebar layout for mobile screens */
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .site-header {
+    --sidebar-width: 75vw;
     flex-direction: column;
     top: 0;
     bottom: 0;
-    width: 60vw;
+    width: var(--sidebar-width);
+    align-items: flex-start;
 
-    padding-top: 3vh;
+    padding-top: 3rem;
+    padding-left: 4vw;
+    box-sizing: border-box;
+
 
     background-color: var(--light-color-4);
 
     transition: ease 200ms;
   }
 
+
   .site-header.header-open {
     right: 0; 
   }
 
   .site-header.header-closed {
-    right: -60vw;
+    right: calc(var(--sidebar-width) * -1);
   }
 
   
