@@ -7,6 +7,7 @@
   user-select: none;
 }
 
+
 .toggle-menu-button {
   position: fixed;
   top: 3vh;
@@ -21,6 +22,7 @@
   background-color: rgb(173, 173, 173);
 
   transition: ease 200ms;
+  user-select: none;
 }
 
 .toggle-menu-button:hover {

@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  font-family: "Lato", serif;
+}
+
 :root {
   --light-color-1: #c7991c;
   --light-color-2: #d2bd1d;
