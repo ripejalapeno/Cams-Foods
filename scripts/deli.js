@@ -1,4 +1,4 @@
-import resizeMap from "./general.js";
+import { resizeMap, openContactInfo} from "./general.js";
 import activateButton from "./header.js";
 
 const specialsBox = document.querySelector('.js-deli-specials-box');
@@ -51,3 +51,5 @@ window.addEventListener('resize', () => {
 resizeMap();
 
 activateButton();
+
+openContactInfo();
