@@ -10,7 +10,7 @@
 .company-title {
   position: fixed;
   top: 0; right: 0; left: 0;
-  height: 2.5rem;
+  height: var(--company-title-height);
   z-index: 30;
 
   display: flex;
@@ -64,7 +64,6 @@
 /* Sidebar layout for mobile screens */
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .site-header {
-    --sidebar-width: 75vw;
     flex-direction: column;
     top: 0;
     bottom: 0;
@@ -98,8 +97,8 @@
     flex-direction: row;
     left: 0;
     right: 0;
-    top: 2.5rem;
-    height: 50px;
+    top: var(--company-title-height);
+    height: var(--header-height);
 
     background-color: white;
     border-bottom: 1px solid var(--third-accent-color);

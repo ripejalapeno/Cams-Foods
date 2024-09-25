@@ -1,4 +1,4 @@
-import resizeMap from "./general.js";
+import { resizeMap, openContactInfo } from "./general.js";
 import activateButton from "./header.js";
 
 const weeklyAdLink = document.querySelector('.js-weekly-ad-link');
@@ -62,34 +62,6 @@ floralLink.addEventListener('click', () => {
   window.open('https://www.cherisflowerbasket.com/#', '_blank');
 })
 
-const adImgBox = document.querySelector('.js-ad-img-box');
-const adImg = document.querySelector('.js-ad-img');
-const bannerImg = document.querySelector('.js-banner-img');
-
-let adImageIndex = 0;
-const adImages = [
-  'ad-0.webp',
-  'ad-1.webp',
-  'ad-2.webp',
-  'ad-3.webp'
-]
-
-setInterval(() => {
-  adImgBox.style.transform = 'translateX(-50%)';
-  adImgBox.style.left = '50%';
-  adImageIndex++;
-  adImg.src = `images/${adImages[adImageIndex % adImages.length]}`;
-  adImg.style.opacity = '1';
-  bannerImg.style.filter = 'blur(3px)';
-  setTimeout(() => {
-    adImgBox.style.transform = 'translateX(-125%)';
-    adImg.style.opacity = '0';
-    bannerImg.style.filter = '';
-  }, 6000);
-}, 8000);
-
-const googleMap = document.getElementById('googleMap');
-
 window.addEventListener('resize', () => {
   resizeMap();
 })
@@ -98,5 +70,6 @@ resizeMap();
 
 activateButton();
 
+openContactInfo();
 
 
