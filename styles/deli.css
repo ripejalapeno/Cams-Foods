@@ -30,7 +30,7 @@ body {
 .deli-specials-box {
   position: absolute;
   left: 50%;
-  top: 100vh;
+  top: 95vh;
   width: 60vw;
   max-width: 800px;
   height: fit-content;

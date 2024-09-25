@@ -7,6 +7,24 @@
   user-select: none;
 }
 
+.company-title {
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  height: 2rem;
+  z-index: 30;
+
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  color: white;
+  background-color: var(--light-color-4);
+  box-shadow: 0 2px 15px black;
+  user-select: none;
+  
+}
+
 
 .toggle-menu-button {
   position: fixed;
@@ -78,7 +96,7 @@
     flex-direction: row;
     left: 0;
     right: 0;
-    top: 0;
+    top: 2rem;
     height: 50px;
 
     background-color: white;
