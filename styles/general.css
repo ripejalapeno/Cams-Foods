@@ -15,6 +15,19 @@ button {
 }
 
 :root {
+  --base-1: #a07628;
+  --base-2: #bb9940;
+  --base-3: #C1A67D;
+  --base-4: #A68A6D;
+
+  --accent-1: #FFECB3;
+  --accent-2: #dfb601;
+  --accent-3: #ac7b00;
+  --accent-4: #FFB700;
+
+  --soft-black: #333333;
+  --soft-white: #FAF9F6;
+
   --light-color-1: #c7991c;
   --light-color-2: #d2bd1d;
   --light-color-3: #fcf26d;
@@ -107,4 +120,8 @@ button {
   height: inherit;
   width: inherit;
   border-radius: inherit;
+}
+
+a {
+  text-decoration: none;
 }

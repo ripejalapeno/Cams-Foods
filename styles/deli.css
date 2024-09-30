@@ -69,6 +69,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
   margin: 1rem 0.5rem;
   position: relative;
   width: fit-content;

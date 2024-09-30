@@ -1,5 +1,5 @@
-import { resizeMap, openContactInfo} from "./general.js";
-import activateButton from "./header.js";
+import resizeMap from "./general.js";
+import { activateButton, openContactInfo } from "./header.js";
 
 const homeLink = document.querySelector('.js-home-link');
 
