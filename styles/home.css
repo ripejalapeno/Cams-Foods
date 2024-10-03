@@ -46,13 +46,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(116, 103, 67);
+  background-color: var(--base-1);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 
   z-index: 1;
 }
 
+/* Declaring angles used to animate weekly deals button */
 @property --angle1{
   syntax: "<angle>";
   initial-value: 0deg;
@@ -87,7 +88,7 @@ body {
 .weekly-ad-link:hover {
   border-radius: 3rem;
   padding: 1.25rem 5rem;
-  background-image: conic-gradient(from var(--angle1), transparent, rgb(247, 193, 76));
+  background-image: conic-gradient(from var(--angle1), transparent, var(--accent-1));
   animation: 2s spin1 linear infinite;
 }
 
@@ -105,7 +106,7 @@ body {
 }
 
 .weekly-ad-link::after {
-  background-color: rgb(199, 153, 28);
+  background-color: var(--accent-1);
 }
 
 .weekly-ad-link:hover::before {
@@ -113,7 +114,7 @@ body {
   width: 99%;
   height: 99%;
   opacity: .95;
-  background-image: conic-gradient(from var(--angle2), transparent, rgb(247, 193, 76));;
+  background-image: conic-gradient(from var(--angle2), transparent, var(--accent-4));
   animation: 2s spin2 linear infinite;
   filter: blur(0.5rem);
 }
@@ -162,7 +163,7 @@ body {
   letter-spacing: 0.1rem;
 
   color: white;
-  background-color: rgb(174, 154, 101);
+  background-color: var(--base-2);
   box-shadow: 2px 2px 8px rgba(66, 59, 38, 0.9);
   border-radius: 5px;
 
@@ -176,7 +177,7 @@ body {
 
 
 .nav-link:hover {
-  background-color: rgb(236, 174, 38);
+  background-color: var(--accent-1);
   box-shadow: 6px 4px 8px rgba(66, 59, 38, 0.95);
   border-radius: 20px;
 }

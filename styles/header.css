@@ -38,18 +38,18 @@
 
   border: none;
   border-radius: 20px;
-  background-color: rgb(173, 173, 173);
+  background-color: var(--soft-white-2);
 
   transition: ease 200ms;
   user-select: none;
 }
 
 .toggle-menu-button:hover {
-  background-color: rgb(204, 203, 203);
+  background-color: var(--soft-white-3);
 }
 
 .toggle-menu-button:active {
-  background-color: rgb(241, 241, 241);
+  background-color: var(--soft-white-4);
 }
 
 .menu-icon {
@@ -150,7 +150,7 @@
 
 .site-header div:hover {
   color: white;
-  background-color: var(--light-color-4);
+  background-color: var(--base-2);
 }
 
 .site-header .current-page {

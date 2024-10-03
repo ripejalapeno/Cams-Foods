@@ -7,8 +7,8 @@
 
   padding: 3rem;
 
-  background-color: var(--light-color-1);
-  color: var(--main-accent-color);
+  background-color: var(--base-5);
+  color: black;
 }
 
 .email-input-card {
@@ -22,7 +22,7 @@
   border-radius: 15px;
 
   width: 65vw;
-  background-color: var(--second-accent-color);
+  background-color: var(--base-1);
   box-shadow: var(--main-shadow);
   box-sizing: border-box;
 }
@@ -42,11 +42,14 @@
   border-radius: 4px;
   padding: 0.75rem;
   letter-spacing: 0.1rem;
+
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .subscribe-button {
-  background-color: var(--third-accent-color);
+  background-color: var(--base-2);
+  font-size: 0.9rem;
   color: white;
   cursor: pointer;
 }
