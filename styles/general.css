@@ -24,12 +24,39 @@ button {
   --base-4: rgb(58, 51, 34);
   --base-5: rgb(160, 130, 55);
 
+  /* Testing */
+  --base-6: #F1E3C6;
+  --base-7: #D4B597;
+  --base-8: #C08B65;
+  --base-9: #B66A4F;
+  --base-10: #9B4138;
+  --base-11: #7E3D3A;
+  --base-12: #C5A995;
+
+  --base-13: #8A4D35;
+  --base-14: #D08357;
+  --base-15: #C5A995;
+  --base-16: #5E4634;
+  --base-17: #948D85;
+  --base-18: #4B4945;
+
   /* Accent Colors - buttons + highlights  */
   --accent-1: #c7991c;
   --accent-2: rgb(230, 149, 1);
   --accent-3: #daaf43;
   --accent-4: rgb(247, 193, 76);
   --accent-5: rgb(238, 197, 14);
+
+  /* Testing */
+  --accent-6: #DAA520;
+  --accent-7: #FFC107;
+  --accent-8: #FFBF00;
+  --accent-9: #FFDB58;
+  --accent-10: #D4AF37;
+  --accent-11: #F9C74F;
+  --accent-12: #FFCB69;
+  --accent-13: #CC7722;
+
 
   /* Soft Whites + Soft Blacks */
   --soft-black-1: #333333;

@@ -7,7 +7,7 @@
 
   padding: 3rem;
 
-  background-color: var(--base-5);
+  background-color: var(--base-17);
   color: black;
 }
 
@@ -22,7 +22,7 @@
   border-radius: 15px;
 
   width: 65vw;
-  background-color: var(--base-1);
+  background-color: var(--base-18);
   box-shadow: var(--main-shadow);
   box-sizing: border-box;
 }
@@ -48,9 +48,9 @@
 }
 
 .subscribe-button {
-  background-color: var(--base-2);
+  background-color: var(--soft-white-3);
   font-size: 0.9rem;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 

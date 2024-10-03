@@ -22,7 +22,7 @@
   font-weight: 700;
 
   color: white;
-  background-color: var(--accent-3);
+  background-color: var(--base-3);
   user-select: none;
 }
 
@@ -78,7 +78,7 @@
     box-sizing: border-box;
 
 
-    background-color: var(--base-2);
+    background-color: var(--base-17);
     box-shadow: -5px 0 10px rgba(63, 63, 63, 0.767);
 
     transition: ease 200ms;
@@ -144,18 +144,18 @@
     flex: 1;
     font-size: 1rem;
 
-    color: var(--base-2);
+    color: var(--base-17);
   }
 }
 
 .site-header div:hover {
   color: white;
-  background-color: var(--base-2);
+  background-color: var(--base-17);
 }
 
 .site-header .current-page {
   color: white;
-  background-color: var(--base-2);
+  background-color: var(--base-17);
 }
 
 .site-header .current-page:hover {
