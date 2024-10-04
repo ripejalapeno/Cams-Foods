@@ -1,0 +1,10 @@
+main {
+  background-color: var(--base-1);
+  color: var(--soft-white-1);
+
+  padding: 3rem;
+}
+
+main div{
+  margin-bottom: 1rem;
+}
