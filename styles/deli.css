@@ -127,6 +127,7 @@ h1::after {
 
   background-color: var(--base-1);
   box-shadow: var(--inset-shadow);
+  box-shadow: inset -2px -3px 15px rgba(240, 240, 240, 0.13);
 }
 
 .menu-item-header {

@@ -18,8 +18,8 @@ button {
   /* Color Palette */
 
   /* Base Colors - body + main section colors */
-  --base-1: rgb(116, 103, 67);
-  --base-2: rgb(174, 154, 101);
+  --base-1: rgb(150, 126, 75);
+  --base-2: rgb(207, 180, 106);
   --base-3: rgb(158, 118, 32);
   --base-4: rgb(58, 51, 34);
   --base-5: rgb(160, 130, 55);
@@ -36,7 +36,7 @@ button {
   --base-13: #8A4D35;
   --base-14: #D08357;
   --base-15: #C5A995;
-  --base-16: #5E4634;
+  --base-16: #dda303;
   --base-17: #948D85;
   --base-18: #4B4945;
 
@@ -55,12 +55,14 @@ button {
   --accent-10: #D4AF37;
   --accent-11: #F9C74F;
   --accent-12: #FFCB69;
-  --accent-13: #CC7722;
+  --accent-13: #d86100;
 
 
   /* Soft Whites + Soft Blacks */
   --soft-black-1: #333333;
   --soft-black-2: #202020;
+  --soft-black-3: #5f5f5f;
+  --soft-black-4: #777777;
 
   --soft-white-1: #FAF9F6;
   --soft-white-2: rgb(173, 173, 173);
