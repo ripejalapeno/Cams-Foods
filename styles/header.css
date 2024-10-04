@@ -63,6 +63,9 @@
 /* Sidebar layout for mobile screens */
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .company-title {
+    justify-content: flex-start;
+
+    padding-left: 1rem;
     box-shadow: 0 2px 15px black;
   }
   
