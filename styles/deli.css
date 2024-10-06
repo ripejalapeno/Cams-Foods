@@ -1,5 +1,5 @@
 body {
-  padding-top: 90vh;
+  padding-top: 85vh;
 }
 
 .background-img-box {
@@ -30,7 +30,7 @@ body {
 .deli-specials-box {
   position: absolute;
   left: 50%;
-  top: 95vh;
+  top: 80vh;
   width: 60vw;
   max-width: 800px;
   height: fit-content;
@@ -136,7 +136,7 @@ h1::after {
   padding: 10px;
   border-bottom: 1px dotted white;
 
-  font-size: 1.10rem;
+  font-size: 1.2rem;
 }
 
 .menu-item-title {

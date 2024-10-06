@@ -37,7 +37,7 @@ button {
   --base-14: #D08357;
   --base-15: #C5A995;
   --base-16: #dda303;
-  --base-17: #948D85;
+  --base-17: #796f63;
   --base-18: #4B4945;
 
   /* Accent Colors - buttons + highlights  */
@@ -56,6 +56,9 @@ button {
   --accent-11: #F9C74F;
   --accent-12: #FFCB69;
   --accent-13: #d86100;
+  --accent-14: #d84f00;
+  --accent-15: #d83d00;
+  --accent-16: #c49a11;
 
 
   /* Soft Whites + Soft Blacks */

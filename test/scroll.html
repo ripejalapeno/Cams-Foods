@@ -3,47 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intersection Observer Example</title>
+  <title>Change Input Background</title>
   <style>
-    .content {
-      height: 200vh; /* Make the page scrollable */
-    }
-    .box {
-      height: 300px;
-      margin: 50px auto;
-      background-color: lightblue;
-    }
-    .in-view {
-      background-color: lightgreen;
+    /* Change the background color of email input */
+    input[type="email"] {
+      background-color: #f0e68c; /* Light khaki background */
+      color: #333; /* Text color */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="content">Scroll down</div>
-  <div class="box">Watch me change color!</div>
-  <div class="content"></div>
-
-  <script>
-    // Select the element you want to observe
-    const target = document.querySelector('.box');
-
-    // Create the IntersectionObserver
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // If the element is in view, change its background color
-          entry.target.classList.add('in-view');
-        } else {
-          // Remove the class if the element goes out of view
-          entry.target.classList.remove('in-view');
-        }
-      });
-    }, {
-      threshold: 0.5 // Trigger when 50% of the element is visible
-    });
-
-    // Start observing the target element
-    observer.observe(target);
-  </script>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
+

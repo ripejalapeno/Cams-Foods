@@ -1,5 +1,5 @@
 body {
-  padding-top: 75vh;
+  padding-top: 60vh;
 }
 
 .banner-img-box {
@@ -72,6 +72,7 @@ body {
   left: 50%;
   translate: -50% -50%;
   font-weight: 600;
+  font-size: 1.3rem;
 
   color: white;
   
@@ -88,7 +89,7 @@ body {
 .weekly-ad-link:hover {
   border-radius: 3rem;
   padding: 1.25rem 5rem;
-  background-image: conic-gradient(from var(--angle1), transparent, var(--accent-1));
+  background-image: conic-gradient(from var(--angle1), transparent, var(--accent-16));
   animation: 2s spin1 linear infinite;
 }
 
@@ -106,7 +107,7 @@ body {
 }
 
 .weekly-ad-link::after {
-  background-color: var(--accent-1);
+  background-color: var(--accent-16);
 }
 
 .weekly-ad-link:hover::before {
@@ -159,7 +160,7 @@ body {
   justify-content: flex-end;
   text-align: center;
   align-items: center;
-  height: 20vh;
+  aspect-ratio: 18 / 7;
   letter-spacing: 0.1rem;
 
   color: white;
@@ -170,6 +171,20 @@ body {
   cursor: pointer;
   transition-duration: 200ms;
 }
+
+@media screen and (min-width: 1000px) {
+  .nav-link {
+    aspect-ratio: 18 / 5;
+  }
+}
+
+@media screen and (max-width: 999.9px) {
+  .nav-link {
+    aspect-ratio: 18 / 6;
+  }
+}
+
+
 
 .nav-link.left {
   justify-content: flex-start;
@@ -236,7 +251,7 @@ body {
 .nav-link-title {
   width: 50%;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .left .nav-link-title {

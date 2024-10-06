@@ -33,6 +33,15 @@
   }
 }
 
+input[type="email"] {
+  background-color: var(--accent-10);
+  color: white;
+}
+
+input[type="email"]::placeholder {
+  color: var(--soft-white-1);
+}
+
 .email-input,
 .subscribe-button {
   width: 100%;
@@ -55,7 +64,11 @@
 }
 
 .subscribe-button:hover {
-  opacity: 0.8;
+  background-color: var(--accent-14);
+}
+
+.subscribe-button:active {
+  background-color: var(--accent-15);
 }
 
 .mail-icon {
