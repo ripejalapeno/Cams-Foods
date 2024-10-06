@@ -62,6 +62,27 @@ floralLink.addEventListener('click', () => {
   window.open('https://www.cherisflowerbasket.com/#', '_blank');
 })
 
+const emailInput = document.querySelector('.js-email-input');
+const subscribeButton = document.querySelector('.js-subscribe-button');
+
+function subscribe() {
+  if (emailInput.value.includes('.com')) {
+    emailInput.value = '';
+    emailInput.placeholder = 'Welcome to the community';
+    subscribeButton.innerText = 'Subscribed!';
+  }
+}
+
+emailInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    subscribe();
+  }
+})
+
+subscribeButton.addEventListener('click', () => {
+  subscribe();
+})
+
 window.addEventListener('resize', () => {
   resizeMap();
 })

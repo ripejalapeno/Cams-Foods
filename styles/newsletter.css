@@ -34,12 +34,18 @@
 }
 
 input[type="email"] {
-  background-color: var(--accent-10);
+  background-color: var(--accent-17);
   color: white;
 }
 
 input[type="email"]::placeholder {
   color: var(--soft-white-1);
+  background-color: var(--accent-17);
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border: none;
 }
 
 .email-input,
