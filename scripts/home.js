@@ -4,7 +4,7 @@ import {activateButton, openContactInfo} from "./header.js";
 const weeklyAdLink = document.querySelector('.js-weekly-ad-link');
 
 weeklyAdLink.addEventListener('click', () => {
-  window.open('https://www.chrisfoodcenter.com/_files/ugd/a8f83f_f4edfed9b237442facd5c33f34e8c40b.pdf', '_blank');
+  window.open('https://www.chrisfoodcenter.com/_files/ugd/a8f83f_f4a71dd09dee4367b2c63113ecf6249f.pdf', '_blank');
 })
 
 const meatProcessingLink = document.querySelector('.js-meat-processing-link');
